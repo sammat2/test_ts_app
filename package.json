@@ -1,0 +1,18 @@
+{
+  "name": "hostname-config-example",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "default": "ts-node src/index.ts",
+    "dev": "HOSTNAME=dev.local ts-node src/index.ts",
+    "build": "tsc",
+    "prod": "NODE_ENV=production ts-node src/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
